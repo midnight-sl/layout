@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="style.css">
+  <script language="JavaScript">
+    function mdy(todaysdate) {
+    return todaysdate.getMonth()+1+"/"+todaysdate.getDate()+"/"+todaysdate.getFullYear()
+    }
+  </script>
+  <script>
+      function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('time').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+      </script>
+</head>
+<body onload="startTime()">
+  <div class="global-container"> 
+  <div class="top-container"> 
+    <div class="master">
+      <div class="masterTopIcons">
+        <img id="fishy" src="images/fishy.png" alt="fishy image">
+        <div class="master-container">
+          <div class="iconsRow">
+            <img src="images/wireless-48.png" alt="wifi icon">
+            <img src="images/bluetooth-2-48.png" alt="bluetooth icon">
+            <img src="images/computer-4-48.png" alt="screen icon">
+          </div>
+          <div class="date">
+              <script language="JavaScript">
+                sampleDate1=new Date()
+                document.write (mdy(sampleDate1))
+              </script>
+            </div>
+          </div>
+      </div>
+      <div id="time"></div>
+      <h1>Master</h1>
+    </div>
+    <div class="special-container">
+      <div class="blockWithDiscription">
+        <div class="iconBlock">
+          <div class="specialIcon"><img src="images/thermometer-2-48.png" alt="thermometer icon"></div>
+          <div class="blockContent">
+            <p>&#8451;</p>
+            <p>24.5</p>
+          </div>
+        </div>
+        <p>THEMPERATURE</p>
+      </div>
+
+      <div class="blockWithDiscription">
+          <div class="iconBlock">
+            <div class="specialIcon"><img src="images/test-tube-2-48.png" alt="test tube"></div>
+            <div class="blockContent">
+              <p>pH</p>
+              <p>7.0</p>
+            </div>
+          </div>
+          <p>PH1</p>
+        </div>
+
+      <div class="blockWithDiscription">
+        <div class="iconBlock">
+          <div class="specialIcon"><img src="images/test-tube-2-48.png" alt="test tube"></div>
+          <div class="blockContent">
+            <p>pH</p>
+            <p>7.1</p>
+          </div>
+        </div>
+        <p>PH2</p>
+      </div>
+
+      <div class="blockWithDiscription">
+        <div class="iconBlock">
+          <div class="specialIcon"><img src="images/test-tube-4-48.png" alt="big test tube"></div>
+          <div class="blockContent">
+              <p>mV</p>
+              <p>9.0</p>
+          </div>
+        </div>
+        <p>REDOX</p>
+      </div>
+
+      <div class="blockWithDiscription">
+        <div class="iconBlock">
+          <div class="specialIcon bolt"><img src="images/bolt-drop.png" alt="bolt drop"></div>
+          <div class="blockContent">
+            <p>mS/cm</p>
+            <p>28.2</p>
+          </div>
+        </div>
+        <p>CONDUCTIVITY</p>
+      </div>
+
+      <div class="blockWithDiscription">
+        <div class="iconBlock">
+          <div class="specialIcon"><img src="images/logo-o2.png" alt="oxygen"></div>
+          <div class="blockContent">
+            <p>%</p>
+            <p>70.9</p>
+          </div>
+        </div>
+        <p>O2</p>
+      </div>
+
+      <div class="wavesWithDisciption">
+        <div class="iconBlock"><img class="waves" src="images/waves.png" alt="waves"></div>
+        <p>FLOAT 1</p>
+      </div>
+
+      <div class="wavesWithDisciption">
+        <div class="iconBlock"><img class="waves" src="images/waves.png" alt="waves"></div>
+        <p>FLOAT 2</p>
+      </div>
+
+      <div class="wavesWithDisciption">
+        <div class="iconBlock"><img class="waves" src="images/waves.png" alt="waves"></div>
+        <p>FLOAT 3</p>
+      </div>
+
+      <div class="wavesWithDisciption">
+        <div class="iconBlock"><img class="waves" src="images/waves.png" alt="waves"></div>
+        <p>OPTICAL 1</p>
+      </div>
+
+      <div class="wavesWithDisciption">
+        <div class="iconBlock"><img class="waves" src="images/waves.png" alt="waves"></div>
+        <p>OPTICAL 2</p>
+      </div>
+
+      <div class="wavesWithDisciption">
+        <div class="iconBlock"><img class="waves" src="images/waves.png" alt="waves"></div>
+        <p>OPTICAL 3</p>
+      </div>
+    </div>
+  </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img class="leaf" src="images/leaf-48.png" alt="leaf"></div>
+        <p>PAR 1</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img class="leaf" src="images/leaf-48.png" alt="leaf"></div>
+        <p>PAR 2</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img class="bolt" src="images/lightning-bolt-48.png" alt="lightning bolt"></div>
+        <p>0-10V 1</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img class="bolt" src="images/lightning-bolt-48.png" alt="lightning bolt"></div>
+        <p>0-10V 2</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img class="bolt" src="images/lightning-bolt-48.png" alt="lightning bolt"></div>
+        <p>0-10V 3</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img class="bolt" src="images/lightning-bolt-48.png" alt="lightning bolt"></div>
+        <p>0-10V 4</p>
+      </div>
+  
+      <div class="simpleBlock">
+        <div class="iconBlock"><img class="bolt" src="images/lightning-bolt-48.png" alt="lightning bolt"></div>
+        <p>0-10V 5</p>
+      </div>
+  
+      <div class="simpleBlock">
+        <div class="iconBlock"><img class="bolt" src="images/lightning-bolt-48.png" alt="lightning bolt"></div>
+        <p>0-10V 6</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img src="images/feedstop.png" alt="feedstop"></div>
+        <p>FEEDSTOP</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img src="images/switch-3-48.png" alt="feedstop"></div>
+        <p>VIRTUAL SWITCH 1</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img src="images/switch-3-48.png" alt="feedstop"></div>
+        <p>VIRTUAL SWITCH 2</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img src="images/switch-3-48.png" alt="feedstop"></div>
+        <p>VIRTUAL SWITCH 3</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img src="images/switch-3-48.png" alt="feedstop"></div>
+        <p>VIRTUAL SWITCH 4</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img src="images/switch-3-48.png" alt="feedstop"></div>
+        <p>VIRTUAL SWITCH 5</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img src="images/switch-3-48.png" alt="feedstop"></div>
+        <p>VIRTUAL SWITCH 6</p>
+      </div>
+
+      <div class="simpleBlock">
+        <div class="iconBlock"><img src="images/switch-3-48.png" alt="feedstop"></div>
+        <p>VIRTUAL SWITCH 7</p>
+      </div>
+
+    
+  </div>
+</body>
+
+</html>
